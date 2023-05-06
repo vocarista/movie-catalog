@@ -1,0 +1,20 @@
+body{
+  min-height: 100vh;
+  background-color: rgb(15,23,42);
+}
+
+@media only screen and (max-width: 768px){
+  #show-list{
+    grid-template-columns: 400px !important;
+  }
+  .tile{
+    max-width: 90vw;
+  }
+  .booking-form{
+    min-width: 90vw;
+  }
+  .description{
+    min-width: 90vw;
+    height:auto;
+  }
+}
