@@ -16,7 +16,8 @@ export default function Description(props) {
     const showData = getShow(showList, id)
 
     return (
-        <div className = "description rounded-lg hover:shadow-md ease duration-200 hover:shadow-blue-700 flex flex-col h-[80vh] w-[60vw] bg-slate-700 my-10 overflow-y-auto">
+        <div className = "description rounded-lg hover:shadow-md ease duration-200 hover:shadow-blue-700 flex flex-col h-[90vh] w-[60vw] bg-slate-700 my-10 overflow-y-auto">
+            { showData['show']['image'] !== null ? <img src = { showData['show']['image']['original'] } /> : null }
             <h1 className = "place-self-top text-white font-extrabold text-center text-5xl my-5 mx-2">{ showData['show']['name'] }</h1>
             <p className = { pTextClass + "place-self-start flex-grow" } dangerouslySetInnerHTML= {{__html: showData['show']['summary']}}></p> 
             <div className = "my-10 flex justify-center items-end flex-grow">
