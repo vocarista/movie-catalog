@@ -23,7 +23,7 @@ function App() {
   const memoizedData = useMemo(() => data, [data])
 
   return (
-    <div className = "App bg-slate-900 flex flex-col place-items-center min-h-full justify-center">
+    <div className = "App ease duration-200 bg-slate-900 flex flex-col place-items-center min-h-full justify-center">
     <Routes>
       <Route path = "/" element = { <Home showList = { memoizedData }/> } />
       <Route path = "/desc/:id" element = { <Description showList = { memoizedData }/>} />
