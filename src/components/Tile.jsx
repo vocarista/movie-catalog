@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react' 
 import { Link, Routes, Route } from 'react-router-dom'
-import Description from '../pages/Description'
 const pTextClass = "text-slate-300 font-normal mx-4  my-1"
 
 function Tile (props) {
